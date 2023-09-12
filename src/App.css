@@ -1,0 +1,56 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  position: relative; /* Añadimos posición relativa al contenedor raíz */
+}
+
+.contenedor {
+  display: block;
+  width: 500px;
+  height: 250px;
+  background-color: rgb(49, 58, 73);
+  border-radius: 10px;
+  position: relative; /* Añadimos posición relativa al bloque */
+ 
+}
+
+button {
+  background-color:  rgb(102, 235, 180);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin-top: -25px; /* Añadimos margen superior negativo para superponerlo al bloque */
+  position: absolute; /* Añadimos posición absoluta para superponer el botón */
+  left: 50%; /* Centramos horizontalmente */
+  transform: translateX(-50%); /* Centramos horizontalmente */
+  z-index: 2; /* Le damos un z-index mayor para que esté encima del bloque */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: rgb(32, 38, 50);
+  color: white;
+}
+
+h6 {
+  padding-top: 50px;
+  line-height: 1.1;
+  color: rgb(102, 235, 180);
+}
+
+
+
+
+
+
+
+
+
+
+
